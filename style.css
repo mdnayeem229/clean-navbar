@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+box-sizing: border-box;
+text-decoration: none;
+font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  transition: 0.5s all linear;
+}
+
+body{
+    background: #efefef;
+    color: #0000;
+}
+/*---------------navbar logo------------*/
+.nav-item a{
+    color: #b7acac;
+    font-weight: 700;
+    text-decoration: none;
+    position: relative;
+    font-size: 1rem;
+}
+.navbar .navbar-logo{
+    position: relative;
+    height: 20px;
+    width: 10px;
+    border-top-right-radius:20px;
+    border-top-left-radius: 20px;
+    background: green;
+    text-align: center;
+    top: 0;
+    left: 3.2rem;
+    z-index: 1;
+}
+.navbar .navbar-logo::before{
+    position: absolute;
+    content: '';
+    height: 20px;
+    width: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: red;
+    text-align: center;
+    top: 5px;
+    left: 10px;
+    transform: rotate(40deg);
+    z-index: -1;
+}
+.navbar .navbar-logo::after{
+    position: absolute;
+    content: '';
+    height: 20px;
+    width: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: yellow;
+    text-align: center;
+    top: 5px;
+    right: 10px;
+    transform: rotate(-40deg);
+    z-index: -1;
+}
+.navbar a{
+    text-decoration: none;
+}
+.navbar h3{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 10px;
+}
